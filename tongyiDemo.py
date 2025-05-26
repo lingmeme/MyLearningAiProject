@@ -13,7 +13,7 @@ try:
         model="qwen-plus",  # 模型列表：https://help.aliyun.com/zh/model-studio/getting-started/models
         messages=[
             {'role': 'system', 'content': 'You are a python assistant.'},
-            {'role': 'user', 'content': 'python文件名，首字母大写还是小写？'}
+            {'role': 'user', 'content': '你好'}
             ]
     )
     print(completion.choices[0].message.content)
