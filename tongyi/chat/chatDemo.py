@@ -23,7 +23,8 @@ messages = [
 ]
 assistant_output = "欢迎光临阿里云百炼手机商店，您需要购买什么尺寸的手机呢？"
 print(f"模型输出：{assistant_output}\n")
-while "我已了解您的购买意向" not in assistant_output:
+user_input = "<UNK>"
+while user_input not in "exit,quit,Exit,退出":
     user_input = input("请输入：")
     # 将用户问题信息添加到messages列表中
     messages.append({"role": "user", "content": user_input})
