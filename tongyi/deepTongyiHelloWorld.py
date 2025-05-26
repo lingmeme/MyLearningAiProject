@@ -8,7 +8,7 @@ client = OpenAI(
     base_url="https://dashscope.aliyuncs.com/compatible-mode/v1",
 )
 
-messages = [{"role": "user", "content": "你是谁"}]
+messages = [{"role": "user", "content": "怎么在你的每次回复加上token的使用量情况呢？"}]
 
 completion = client.chat.completions.create(
     model="qwen-plus-2025-04-28",  # 您可以按需更换为其它深度思考模型
